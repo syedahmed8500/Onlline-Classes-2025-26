@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNIT ACADEMY - Physical Science Online Classes Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class=" img src = "https://github.com/syedahmed8500/Onlline-Classes-2025-26/blob/main/New%20LearnIt%20Logo.png" alt = "Logo">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <h1 class="academy-title">LEARNIT ACADEMY</h1>
+                <h2 class="course-title">PHYSICAL SCIENCE ONLINE CLASSES</h2>
+                <p class="subtitle">Registration Portal</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Information Section -->
+    <section class="course-info">
+        <div class="container">
+            <h3>Course Information</h3>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4>Classes Start</h4>
+                    <p>1st November 2025</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h4>Course Fee</h4>
+                    <p>₹3,000 INR</p>
+                </div>
+                <div class="info-card deadline-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Registration Deadline</h4>
+                    <p>25th October 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="form-container">
+                <h3>Student Registration Form</h3>
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="grade" class="form-label">Student's Grade/Class *</label>
+                            <select id="grade" name="grade" class="form-control" required>
+                                <option value="">Select Grade</option>
+                                <option value="10th">10th Grade</option>
+                                <option value="11th">11th Grade</option>
+                                <option value="12th">12th Grade</option>
+                                <option value="college">College Level</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentName" class="form-label">Parent/Guardian Name</label>
+                            <input type="text" id="parentName" name="parentName" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea id="address" name="address" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="topics" class="form-label">Specific Topics of Interest in Physical Science (Optional)</label>
+                        <textarea id="topics" name="topics" class="form-control" rows="4" placeholder="e.g., Mechanics, Thermodynamics, Electromagnetism, Optics, Modern Physics..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full-width">
+                        <i class="fas fa-user-plus"></i>
+                        Register Now
+                    </button>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message hidden">
+                    <div class="success-content">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Registration Successful!</h4>
+                        <p>Thank you for registering with LEARNIT ACADEMY. We will contact you soon with further details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Links Section -->
+    <section class="social-links">
+        <div class="container">
+            <h3>Connect With Us</h3>
+            <p>Follow us on social media and visit our website for more updates and content</p>
+            <div class="social-buttons">
+                <a href="https://www.youtube.com/channel/UC2oLhRJ3tfakCX6ViQ4KVrw" target="_blank" class="social-btn youtube-btn">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube Channel</span>
+                </a>
+                <a href="https://learnitacademysam.teachmint.in" target="_blank" class="social-btn website-btn">
+                    <i class="fas fa-globe"></i>
+                    <span>Official Website</span>
+                </a>
+                <a href="https://www.instagram.com/learn_itacademy/#" target="_blank" class="social-btn instagram-btn">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LEARNIT ACADEMY</h4>
+                    <p>Excellence in Physical Science Education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: syedahmed8500@gmail.com</p>
+                    <p>For inquiries, please reach out through our social media channels</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Course Details</h4>
+                    <p>Physical Science Online Classes for X standard/p>
+                    <p>Starting: 1st November 2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LEARNIT ACADEMY. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
