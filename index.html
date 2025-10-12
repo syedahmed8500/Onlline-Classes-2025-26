@@ -58,6 +58,10 @@
             <div class="form-container">
                 <h3>Student Registration Form</h3>
                 <form id="registrationForm" class="registration-form" action="https://formspree.io/f/mldpoejj" method="POST">
+                    <form action="save_data.php" method="POST">
+                    <h2>Save Data to Server</h2>
+    
+                    <label for="form_data">       
                     <div class="form-row">
                         <div class="form-group">
                             <label for="fullName" class="form-label">Full Name *</label>
@@ -104,10 +108,10 @@
                         <i class="fas fa-user-plus"></i>
                         Register Now
                     </button>
-                    <form action="process_form.php" method="POST">
-                    <label for="text_to_save">Enter your text:</label><br>
-                    <textarea id="text_to_save" name="content" rows="10" cols="50"></textarea><br>
-                    <input type="submit" value="Save to File">
+                    </label><br>
+                    <textarea id="form_data" name="content" rows="5" cols="40" required></textarea><br><br>
+    
+                <input type="submit" value="saved_form_entries.txt">
                 </form>
 
                 <!-- Success Message -->
