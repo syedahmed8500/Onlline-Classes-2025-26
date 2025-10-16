@@ -1,6 +1,6 @@
 <?php
 // Set the correct file path as requested.
-$file_path = 'Online-Classes-2025-26/saved_form_data.txt';
+$file_path = 'Online-Classes-2025-26/saved_form_entries.txt';
 
 // Check if the form was submitted using the POST method.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
