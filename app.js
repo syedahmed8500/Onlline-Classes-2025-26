@@ -153,7 +153,22 @@ document.addEventListener('DOMContentLoaded', function() {
         registrationForm.classList.add('form-submitting');
 
         // Simulate form submission delay
-        setTimeout(() => {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbweDDTipTxEjpylRQhNYHVNeQ-hkDSrwy6IFS7KRAvIXCZOgZUbYyc4RbWF4qF7xxNo/exec'; // Paste your Apps Script Web App URL
+const formData = new FormData(registrationForm);
+
+fetch(scriptURL, { method: 'POST', body: formData })
+  .then(response => response.json())
+  .then(result => {
+      registrationForm.style.display = 'none';
+      successMessage.classList.remove('hidden');
+      successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  })
+  .catch(error => {
+      alert('Error submitting form: ' + error);
+      submitButton.disabled = false;
+      submitButton.innerHTML = '<i class="fas fa-user-plus"></i> Register Now';
+  });
+
             // Hide form and show success message
             registrationForm.style.display = 'none';
             successMessage.classList.remove('hidden');
